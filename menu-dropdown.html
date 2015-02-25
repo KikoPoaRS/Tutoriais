@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
+Transitional//EN">
+<html lang="pt-br">
+
+	<head>
+		<title>Menu dropdown</title>
+		<!-- <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<style type="text/css">
+
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style:none;
+				width: 150px;
+				border-bottom: 1px solid #ccc;
+			}
+
+			ul li{
+				position: relative;
+			}
+			
+			
+			li.menuparent{
+				background: transparent url(imgs/arrow.gif) right center no-repeat;
+			}
+
+			/*posiciona o submenu em relação a ele próprio*/
+			li ul{
+				position: absolute;
+				left: 149px;
+				top: 0;
+				display: none;
+			}
+			
+			/*esconde o conteúdo nos subníveis
+			Obs:; *.over é um hack para as versões anteriores do IE 11 que não aceitam o :hover */
+			li:hover ul ul, li.over ul ul { 
+				display:none; 
+			}
+
+			
+			li:hover ul, li li:hover ul, li.over ul, li li.over ul { 
+				display: block; 
+			} /* Aqui a magica */
+
+			/*mostra o conteúdo no segundo nível*/
+			ul li a{
+				display: block;
+				text-decoration: none;
+				color: #777;
+				padding: 5px;
+				border: 1px solid #ccc;
+				border-bottom: 0;
+			}
+			
+			li:hover, li.over{
+				background-color: #e6e6e6;
+			}
+
+			li.menuparent:hover, li.menuparent.over{
+				background: #e6e6e6 url(imgs/arrow.gif) right center no-repeat;
+			}
+			
+		</style>
+
+	</head>
+
+
+	<body>
+
+		
+		<!-- TOPO PADRÃO NOS ARQUIVOS DE TUTORIAIS -->
+		<span><style type="text/css">body{padding: 0;margin:0;font: normal 11px verdana;}#topovolta{width:100%; height:25px; background:#ACC291; margin-bottom:0px; padding: 10px 0px 0px 10px; font-family:Verdana; font-size: 9pt}#topovolta a{text-decoration:none; color:#fff; margin-top:auto}#topovolta a:hover{color: #7A866C;}</style></span><div id="topovolta"><a href="index.html">&lt;&lt; Voltar para a tela principal</a></div>
+		<!-- ////////////////////////////////////// -->
+
+		<div style="padding:30px">
+
+			<ul id="primary-nav"> 
+			    <li><a href="#">Home</a></li> 
+			    <li class="menuparent"><a href="#" >About</a> 
+			      <ul> 
+			        <li><a href="#">History</a></li> 
+			        <li><a href="#">Team</a></li> 
+			        <li><a href="#">Offices</a></li> 
+			      </ul> 
+			    </li> 
+
+			   	<li class="menuparent"><a href="#" >Services</a> 
+			      <ul> 
+			        <li><a href="#">Web Design</a></li> 
+			        <li><a href="#">Internet Marketing</a></li> 
+			        
+			        <li class="menuparent"><a href="#" >Hosting</a>
+			            <ul>
+			               <li><a href="#">Dedicated</a></li> 
+			               <li><a href="#">Virtual</a></li> 
+			               <li><a href="#">Shared</a></li>
+			               <li><a href="#">Managed</a></li>
+			            </ul>						 
+			        </li>
+
+			        <li><a href="#">Domain Names</a></li> 
+			        <li><a href="#">Broadband</a></li> 
+			      </ul> 
+			    </li>
+
+			    <li class="menuparent"><a href="#" >Contact Us</a> 
+			      <ul> 
+			        <li><a href="#">United Kingdom</a></li> 
+			        <li><a href="#">France</a></li> 
+			        <li><a href="#">USA</a></li> 
+			        <li><a href="#">Australia</a></li> 
+			      </ul> 
+			    </li> 
+			 </ul>
+
+		</div>
+	</body>
+</html>
