@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 
+Transitional//EN">
+<html lang="pt-br">
+
+	<head>
+		<title>Estudo de Floats</title>
+		<!-- <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+		<style type="text/css">
+			
+			#container{
+				width: 100%;
+			}
+			
+			/*CLEARFIX é o recurso usado para fazer com que o elemento pai
+			que contém elementos filho flutuantes consiga expandir totalmente
+			para conter os elmentos filho visualmente dentro. 
+			Esta classe deve ser aplicada junto à classe do elemento pai*/
+
+			.clearfix:after {
+			    content: '';
+			    display: block;
+			    clear: both;
+			}
+
+			/*//////////////////////*/
+
+			.pai{
+				background-color: yellow;
+				margin: 0 auto;
+				width: 800px;
+				padding: 15px;
+			}
+
+			.filho{
+				background-color: red;
+				background-image: url(imgs/valendo.gif);
+				width: 30%;
+				height: 100px;
+				margin: 5px;
+			}
+
+			.esq{
+				float: left;
+			}
+
+			.dir{
+				float: right;
+			}
+
+			.borda{
+				/*border: 1px solid #00f;*/
+			}
+
+			.limpaesq{clear: left;}
+			.limpadir{clear: right;}
+			.limpatudo{clear: both;}
+
+
+			/* para resoluções menores que 800px */
+			@media screen and (max-width: 850px) {
+
+				.pai{ width: 90%;}
+
+			}
+			
+		</style>
+	</head>
+
+
+	<body>
+
+		
+		<!-- TOPO PADRÃO NOS ARQUIVOS DE TUTORIAIS -->
+		<span><style type="text/css">body{padding: 0;margin:0;font: normal 11px verdana;}#topovolta{width:100%; height:25px; background:#ACC291; margin-bottom:0px; padding: 10px 0px 0px 10px; font-family:Verdana; font-size: 9pt}#topovolta a{text-decoration:none; color:#fff; margin-top:auto}#topovolta a:hover{color: #7A866C;}</style></span><div id="topovolta"><a href="index.html">&lt;&lt; Voltar para a tela principal</a></div>
+		<!-- ////////////////////////////////////// -->
+
+		<div id="container" class="borda">
+			<div class="pai clearfix borda">
+				<div class="filho dir limpadir borda"></div>
+				<div class="filho dir limpadir borda"></div>
+				<div class="filho dir limpadir borda"></div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt, blanditiis eligendi dolorem dicta consequuntur nihil possimus voluptates autem repudiandae corrupti nam impedit sequi inventore unde, veritatis eaque libero ad.
+				</p>
+			</div>
+
+		</div>
+
+		
+
+
+	</body>
+</html>

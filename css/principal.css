@@ -18,7 +18,7 @@ header{
 
 #conteudo-topo{
 	margin: 0 auto;
-	width: 1000px;
+	width: 900px;
 	color: #fff;
 	position: relative;
 	top: 50px;
@@ -28,7 +28,7 @@ header{
 #conteudo-topo p{
 	line-height: 173%;
 	font-weight: 300;
-	width: 500px;
+	width: 60%;
 	margin-top: 10px;
 	font-size: 17px;
 	zoom:120%;
@@ -44,7 +44,7 @@ header{
 .conteudo{
 	background: #fff;
 	margin: 0 auto;
-	width: 1000px;
+	width: 900px;
 	padding: 25px 0px 0px 0px;
 }
 
@@ -83,6 +83,17 @@ header{
 	color: #ACC291;
 }
 
+
+@media screen and (max-width: 960px) {
+
+	#conteudo-topo, .conteudo{ width: 90%;}
+
+	#conteudo-topo p{
+		line-height: 110%;
+		width: 80%;
+	}
+
+}
 
 
 
